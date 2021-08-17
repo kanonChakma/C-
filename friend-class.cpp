@@ -21,7 +21,6 @@ class Person2
 public:
     void Display(Person1 &p3)
     {
-
         cout << p3.age << " " << p3.camera << " " << p3.tshirt << endl;
     }
 };
