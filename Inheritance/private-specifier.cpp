@@ -29,6 +29,7 @@ public:
         cout << privateB << endl;
     }
 };
+
 int main()
 {
     A a1;
