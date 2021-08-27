@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-
+//when derived class inherit base class as public
+//base class protected  member will be protected in derived class
 class Base
 {
 private:
@@ -22,14 +23,13 @@ public:
         cout << a1 << " " << a2 << " " << a3 << endl;
     }
 };
-
+/// we can change a2 because it is protected memeber in baseClasse
 class Derieved : public Base
 {
 public:
     void changeValue()
     {
-        //a1=50;   that will error it is private memeber
-        a2 = 60; //a2 is protected but it can be change in Derieved class
+        a2 = 60;
         a3 = 70;
     }
     void DisplayOne()
@@ -37,7 +37,7 @@ public:
         cout << a2 << " " << a3 << endl;
     }
 };
-
+///
 int main()
 {
     Base b1;
@@ -47,6 +47,5 @@ int main()
     d1.DisplayOne();
     d1.a3 = 70;
     d1.DisplayOne();
-
     return 0;
 }
