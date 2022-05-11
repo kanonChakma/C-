@@ -1,35 +1,37 @@
 #include<iostream>
 using namespace std;
-class A{
+class Person{
   public:
       string name;
       int age;
+      int salary;
 
-      A(int Age,string Name) //Parameterized Constructor
+      Person(int Age,int salary, string Name) //Parameterized Constructor
       {
           name=Name;
           age=Age;
+          this->salary=salary;
       }
 
-      A(A &Age)  //Copy Constructor
+      Person(Person &p2)  //Copy Constructor
       {
-         age=Age.age;
+         this->name = p2.name;
+         age = p2.age;
+         salary = p2.salary;
       }
       void display()
        {
-         cout<<age<<"  "<<name<<endl;
+          cout<<name<<"  "<<age<<endl;
+          cout<<name<<"  "<<salary<<endl;  
        }
  };
 
 int main()
   {
    //A a1=A(24, "kanon");
-
-   A a1(24, "kanon");   //calling parameterized constructor
-
-   A a2(a1);       //calling the copy constructor
-
-   a1.display();
-
-   cout<<a2.age;
+   Person p1(24,30000, "rifat");   //calling parameterized constructor
+   Person p2(p1);       //calling the copy constructor
+   p1.display();
+   p2.display();
+   cout<<p2.age;
  }
