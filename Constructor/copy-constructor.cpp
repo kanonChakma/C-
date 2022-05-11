@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class Person{
+class Person {
   public:
       string name;
       int age;
@@ -8,9 +8,9 @@ class Person{
 
       Person(int Age,int salary, string Name) //Parameterized Constructor
       {
-          name=Name;
-          age=Age;
-          this->salary=salary;
+          name = Name;
+          age = Age;
+          this->salary = salary;
       }
 
       Person(Person &p2)  //Copy Constructor
