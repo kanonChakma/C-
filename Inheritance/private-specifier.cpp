@@ -1,5 +1,7 @@
-//base class public member will be private member in derieved class if
-//derieved class inherit base class as a private
+/*
+   base class public member will be private member in derieved class if
+ derieved class inherit base class as a private
+*/
 
 #include <iostream>
 using namespace std;
