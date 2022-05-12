@@ -10,7 +10,7 @@ class AddNumber
      AddNumber(int a1=10, int b2=20);
 
      AddNumber operator+ (AddNumber num) {
-          AddNumber temp;
+         AddNumber temp;
          temp.number1 = number1 + num.number1;
          temp.number2 = number2 + num.number2;
          return temp;
@@ -39,6 +39,7 @@ int main() {
      AddNumber a1, a2(30,40), total;
      a1.printValue();
      a2.printValue();
+     
      total =  a1 + a2;
      total.printValue();
 

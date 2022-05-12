@@ -29,11 +29,13 @@ village::village(string n ="dajar para", int pe = 500, float temp = 25.6f)
    people = pe;
    this->temparature = temp;
 }
+
 village::village(village &v3){
  this->name = v3.name;
  this->people=v3.people;
  this->temparature=v3.temparature;
 }
+
 village::~village()
 {
   cout<<"Destructor are destroyed"<<endl;
